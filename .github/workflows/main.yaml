@@ -27,6 +27,8 @@ jobs:
         git remote set-url origin https://${{secrets.GH_TOKEN}}@github.com/redemptive/redemptive.github.io.git
     - name: npm install
       run: npm install
+    - name: Build package
+      run: npm build
     - name: eslint
       run: npm run lint
     - name: Deploy to GH pages
