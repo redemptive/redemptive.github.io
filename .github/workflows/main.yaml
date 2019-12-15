@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - dev
-  pull_request:
-    branches:
-      - dev
 
 jobs:
   build:
@@ -29,6 +26,8 @@ jobs:
         git config --local user.name "redemptive"
         git remote set-url origin https://${{secrets.GH_TOKEN}}@github.com/redemptive/redemptive.github.io.git
     - name: npm install, build, and test
-      run: |
-        npm install
-        npm run deploy
+      run: npm install
+    - name: eslint
+      run: eslint .
+    - name: Deploy to GH pages
+      run: npm run deploy
