@@ -24,8 +24,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Git config
-      with:
-        super_secret: ${{ secrets.GH_TOKEN }}
       run: |
         git config --local user.email "ewan_forbes@yahoo.co.uk"
         git config --local user.name "redemptive"
