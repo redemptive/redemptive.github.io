@@ -25,9 +25,9 @@ jobs:
         git config --local user.email "ewan_forbes@yahoo.co.uk"
         git config --local user.name "redemptive"
         git remote set-url origin https://${{secrets.GH_TOKEN}}@github.com/redemptive/redemptive.github.io.git
-    - name: npm install, build, and test
+    - name: npm install
       run: npm install
     - name: eslint
-      run: eslint .
+      run: npm run lint
     - name: Deploy to GH pages
       run: npm run deploy
