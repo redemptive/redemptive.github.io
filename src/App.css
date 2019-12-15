@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 
+:root {
+    --highlight-color: #2d79b8;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -74,7 +78,7 @@ header button {
 .main h2 {
     font-size: 32px;
     margin: 1rem 0;
-    color: #ff4e2e;
+    color: var(--highlight-color);
 }
 
 .main h3 {
@@ -97,7 +101,7 @@ header button {
     padding: 20px;
     flex: 1;
     margin-right: 60px;
-    border-top: 3px solid #ff4e2e;
+    border-top: 3px solid var(--highlight-color);;
     background-color: #f9f9f9;
 }
 
@@ -141,6 +145,10 @@ footer p {
     color: #434344;
     font-size: 12px;
     padding: 10px;
+}
+
+footer a {
+    color: var(--highlight-color);
 }
 
 

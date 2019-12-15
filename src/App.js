@@ -25,7 +25,7 @@ class App extends Component {
 									<li></li>
 								</ul>
 							</nav>
-							<button>Button</button>
+							<a href="https://github.com/redemptive"><button>GitHub</button></a>
 						</header>
 						<Switch>
 							<Route path="/about" component={About} />
