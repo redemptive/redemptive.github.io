@@ -24,9 +24,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Git config
+      with:
+        super_secret: ${{ secrets.GH_TOKEN }}
       run: |
         git config --local user.email "ewan_forbes@yahoo.co.uk"
         git config --local user.name "redemptive"
+        git remote set-url origin https://${{secrets.GH_TOKEN}}@github.com/redemptive/redemptive.github.io.git
     - name: npm install, build, and test
       run: |
         npm install
