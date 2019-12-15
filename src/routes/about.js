@@ -7,12 +7,13 @@ function About() {
 			<div className="wrapper">
 				<aside className="sidebar">
 					<h3>Technologies</h3>
+					<h4>Front End</h4>
 					<ul>
 						<li>Javascript</li>
 						<li>React</li>
 						<li>GitHub Pages</li>
 					</ul>
-					<h3>CI Build</h3>
+					<h4>CI Build</h4>
 					<ul>
 						<li>Pull dev branch</li>
 						<li>Check linting</li>

@@ -30,12 +30,12 @@ function Home() {
 					<h2>Ewan Forbes</h2>
 					<h3>DevOps Engineer</h3>
 					<p>
-                  Hello. I'm Ewan Forbes, a DevOps engineer currently working from London
+						Hello. I'm Ewan Forbes, a DevOps engineer currently working from London.
 					</p>
 					<p>
-                  There's nothing I enjoy more than learning a new technology or skill.
-                  This has given me a wide variety of skills at all stages of the development lifecycle.
-                  With my endless curiosity for IT, I'll continue learning and experimenting.
+						There's nothing I enjoy more than learning a new technology or skill.
+						This has given me a wide variety of skills at all stages of the development lifecycle.
+						With my endless curiosity for IT, I'll continue learning and experimenting.
 					</p>
 					<p>
                   Please, feel free to have a browse. There is everything from JavaScript browser games, nodejs rest apis with tdd and docker.  
