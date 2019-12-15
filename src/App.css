@@ -36,7 +36,7 @@ header{
     padding: 20px 0;
     margin-bottom: 40px;
     text-transform: uppercase;
-    border-bottom: 2px solid #b0e0ea;
+    border-bottom: 2px solid #000000;
     display: flex;
     justify-content: space-between;
 }
@@ -58,7 +58,7 @@ header button {
     font-weight: 600;
     cursor: pointer;
     border-radius: 1.25rem;
-    background-color: #51bb7b;
+    background-color: #000000;
 }
 
 /* Main Section */
@@ -74,7 +74,11 @@ header button {
 .main h2 {
     font-size: 32px;
     margin: 1rem 0;
-    color: #50c6db;
+    color: #ff4e2e;
+}
+
+.main h3 {
+    padding-bottom: 10px;
 }
 
 .main p {
@@ -89,10 +93,11 @@ header button {
 /* Sidebar */
 
 .sidebar {
+    border-radius: 20px;
     padding: 20px;
     flex: 1;
     margin-right: 60px;
-    border-top: 3px solid #693f7e;
+    border-top: 3px solid #ff4e2e;
     background-color: #f9f9f9;
 }
 
@@ -129,6 +134,7 @@ footer {
     margin-top: 60px;
     padding: 20px 0;
     background-color: #9f9c9c;
+    border-radius: 20px;
 }
 
 footer p {

@@ -34,7 +34,7 @@ function Home() {
 					</p>
 					<p>
 						There's nothing I enjoy more than learning a new technology or skill.
-						This has given me a wide variety of skills at all stages of the development lifecycle.
+						This has given me a wide range of knowledge across all stages of the development lifecycle.
 						With my endless curiosity for IT, I'll continue learning and experimenting.
 					</p>
 					<p>
