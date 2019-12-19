@@ -39,7 +39,7 @@
         "no-unused-vars": [
             "error", 
             {
-                "varsIgnorePattern": "(^React$|^Link$|^HashRouter$|^Switch$|^Route$|^App$|^test$|^expect$|^ProjectPanel)",
+                "varsIgnorePattern": "(^React$|^Link$|^HashRouter$|^Switch$|^Route$|^App$|^test$|^expect$|^ProjectPanel$|^Footer$|^Header$)",
                 "argsIgnorePattern": "^next$"
             }
         ],

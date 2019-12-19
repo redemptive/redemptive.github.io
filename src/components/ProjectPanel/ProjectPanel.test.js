@@ -5,15 +5,26 @@ import ProjectPanel from './ProjectPanel';
 
 test('Project panel displays a title', () => {
 	const { getByText } = render(<ProjectPanel 
-		title="Space Invaders"
+		title="Test"
 		paragraphs={[
-			'I don\'t think this one needs any introduction.',
-			'I\'ve remade this old school classic into a browser playable game. Ground breaking in it\'s time, \
-			simple game mechanics combine to make the game everybody knows.'
+			'I am talking',
+			'About a project I made'
 		]}
 		codeLink="https://github.com/redemptive/space-invaders"
 		playLink="https://redemptive.github.io/space-invaders/"
 	/>);
-	const linkElement = getByText(/Space Invaders/i);
+	const linkElement = getByText(/Test/i);
 	expect(linkElement).toBeInTheDocument();
+});
+
+test('Project panel has no playLink if is isn\'t passed', () => {
+	const { queryByTestId } = render(<ProjectPanel 
+		title="Test"
+		paragraphs={[
+			'I am talking',
+			'About a project I made'
+		]}
+		codeLink="https://github.com/redemptive/space-invaders"
+	/>);
+	expect(queryByTestId('play-link')).toBeNull();
 });

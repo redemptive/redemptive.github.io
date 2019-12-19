@@ -18,6 +18,7 @@ function About() {
 						<li>GitHub Actions</li>
 						<li>Pull dev branch</li>
 						<li>Check linting</li>
+						<li>Run tests</li>
 						<li>Publish to git hub pages (master branch)</li>
 					</ul>
 				</aside>
@@ -56,6 +57,7 @@ function About() {
 						<li>Triggered on push to dev branch</li>
 						<li>Installs npm packages</li>
 						<li>Checks linting with eslint</li>
+						<li>Runs component tests</li>
 						<li>Builds the react project</li>
 						<li>Deploys to the master branch which GitHub pages serves from</li>
 					</ul>

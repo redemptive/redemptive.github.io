@@ -11,7 +11,7 @@ class ProjectPanel extends Component {
 					})
 				}
 				<p><a href={this.props.codeLink}>View code</a></p>
-				{ (this.props.playLink ? <p><a href={this.props.playLink}>Play it!</a></p> : null) }
+				{ (this.props.playLink ? <p><a data-testid="play-link" href={this.props.playLink}>Play it!</a></p> : null) }
 			</div>
 		);
 	}
