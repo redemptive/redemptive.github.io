@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import {
-	HashRouter as Router,
-	Switch,
-	Route,
-	Link
-} from 'react-router-dom';
+import { HashRouter, Switch, Route, Link } from 'react-router-dom';
 
+// Routes
 import Home from './routes/index';
 import About from './routes/about';
+import Games from './routes/games';
 
 class App extends Component {
 	render() {
 		return (
-			<Router basename='/'>
+			<HashRouter basename='/'>
 				<div className="App">
 					<div className="Content">
 						<header>
@@ -22,13 +19,14 @@ class App extends Component {
 								<ul>
 									<li><Link to="/">Home</Link></li>
 									<li><Link to="/about">About</Link></li>
-									<li></li>
+									<li><Link to="/games">Games</Link></li>
 								</ul>
 							</nav>
 							<a href="https://github.com/redemptive"><button>GitHub</button></a>
 						</header>
 						<Switch>
 							<Route path="/about" component={About} />
+							<Route path="/games" component={Games} />
 							<Route path="/" component={Home} />
 						</Switch>
 						<footer>
@@ -41,7 +39,7 @@ class App extends Component {
 						</footer>
 					</div>
 				</div>
-			</Router>
+			</HashRouter>
 		);
 	}
 }
