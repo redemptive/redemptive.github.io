@@ -12,6 +12,7 @@ function Games() {
 					<ul>
 						<li>Space Invaders</li>
 						<li>Asteroids</li>
+						<li>Crafter</li>
 					</ul>
 				</aside>
 				<section className="main">
@@ -52,6 +53,16 @@ function Games() {
 						]}
 						codeLink="https://github.com/redemptive/js-asteroids"
 						playLink="https://redemptive.github.io/js-asteroids/"
+					/>
+					<ProjectPanel 
+						title="Crafter (in development)"
+						paragraphs={[
+							'My own idea this time.',
+							'A 2D resource collecting and crafting game. \
+							Still in development, this has so far been the most complex of my games to make.'
+						]}
+						codeLink="https://github.com/redemptive/Crafter"
+						playLink="https://redemptive.github.io/Crafter/"
 					/>
 				</section>
 			</div>

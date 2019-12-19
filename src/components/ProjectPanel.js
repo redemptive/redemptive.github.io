@@ -6,8 +6,8 @@ class ProjectPanel extends Component {
 			<div className="ProjectPanel">
 				<h3>{this.props.title}</h3>
 				{ 
-					this.props.paragraphs.map((element) => {
-						return (<p>{element}</p>);
+					this.props.paragraphs.map((element, key) => {
+						return (<p key={key}>{element}</p>);
 					})
 				}
 				<p><a href={this.props.codeLink}>View code</a></p>

@@ -29,6 +29,8 @@ jobs:
       run: npm install
     - name: eslint
       run: npm run lint
+    - name: Run tests
+      run: npm run ci-test
     - name: Build package
       run: npm build
     - name: Deploy to GH pages
