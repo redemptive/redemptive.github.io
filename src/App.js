@@ -4,9 +4,9 @@ import './App.css';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 
 // Routes
-import Home from './routes/index';
-import About from './routes/about';
-import Games from './routes/games';
+import Home from './routes/index/index';
+import About from './routes/about/about';
+import Games from './routes/games/games';
 
 // Components
 import Footer from './components/Footer/Footer';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectPanel from '../components/ProjectPanel/ProjectPanel';
+import ProjectPanel from '../../components/ProjectPanel/ProjectPanel';
 
 function Games() {
 	return (
