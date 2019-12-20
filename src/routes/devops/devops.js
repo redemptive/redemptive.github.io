@@ -30,6 +30,7 @@ function DevOps() {
 						<li>The DevOps Handbook</li>
 						<li>The Phoenix Project</li>
 						<li>Accelerate</li>
+						<li>Lean Startup</li>
 					</ul>
 				</aside>
 				<section className="main">
