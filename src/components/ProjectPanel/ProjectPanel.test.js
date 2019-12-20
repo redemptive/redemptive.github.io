@@ -28,3 +28,15 @@ test('Project panel has no playLink if is isn\'t passed', () => {
 	/>);
 	expect(queryByTestId('play-link')).toBeNull();
 });
+
+test('Project panel has no codeLink if is isn\'t passed', () => {
+	const { queryByTestId } = render(<ProjectPanel 
+		title="Test"
+		paragraphs={[
+			'I am talking',
+			'About a project I made'
+		]}
+		playLink="https://github.com/redemptive/space-invaders"
+	/>);
+	expect(queryByTestId('code-link')).toBeNull();
+});

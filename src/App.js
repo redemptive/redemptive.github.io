@@ -7,6 +7,7 @@ import { HashRouter, Switch, Route } from 'react-router-dom';
 import Home from './routes/index/index';
 import About from './routes/about/about';
 import Games from './routes/games/games';
+import DevOps from './routes/devops/devops';
 
 // Components
 import Footer from './components/Footer/Footer';
@@ -22,12 +23,14 @@ class App extends Component {
 							navLinks={[
 								{page: '/', text: 'Home'},
 								{page: '/about', text: 'About'},
+								{page: '/devops', text: 'DevOps'},
 								{page: '/games', text: 'Games'}
 							]}
 						/>
 						<Switch>
 							<Route path="/about" component={About} />
 							<Route path="/games" component={Games} />
+							<Route path="/devops" component={DevOps} />
 							<Route path="/" component={Home} />
 						</Switch>
 						<Footer 
