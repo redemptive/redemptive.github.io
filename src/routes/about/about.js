@@ -15,7 +15,7 @@ function About() {
 					</ul>
 					<h4>CI Build</h4>
 					<ul>
-						<li>GitHub Actions</li>
+						<li>With GitHub Actions</li>
 						<li>Pull dev branch</li>
 						<li>Check linting</li>
 						<li>Run tests</li>

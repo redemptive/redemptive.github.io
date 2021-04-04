@@ -22,9 +22,9 @@ class App extends Component {
 						<Header 
 							navLinks={[
 								{page: '/', text: 'Home'},
-								{page: '/about', text: 'About'},
 								{page: '/devops', text: 'DevOps'},
-								{page: '/games', text: 'Games'}
+								{page: '/games', text: 'Games'},
+								{page: '/about', text: 'About'}
 							]}
 						/>
 						<Switch>

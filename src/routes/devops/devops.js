@@ -30,7 +30,8 @@ function DevOps() {
 						<li>The DevOps Handbook</li>
 						<li>The Phoenix Project</li>
 						<li>Accelerate</li>
-						<li>Lean Startup</li>
+						<li>The Lean Startup</li>
+						<li>The Goal</li>
 					</ul>
 				</aside>
 				<section className="main">
@@ -45,7 +46,7 @@ function DevOps() {
 					</p>
 					<p>
 						I read a lot on the theory and origin of DevOps. In my opinion, DevOps is a way of working. 
-						Not neglecting the this side of the career, a good DevOps engineer should also be able to:
+						Not neglecting this side of the career, a good DevOps engineer should also be able to:
 					</p>
 					<ul>
 						<li>Provide robust, secure, scalable and cost effective infrastructure (cloud or otherwise).</li>
@@ -56,7 +57,7 @@ function DevOps() {
 						<li>Have a deep understanding of development methodologies such as agile, scrum and lean.</li>
 					</ul>
 					<p>
-						Enough talk, here are a few DevOps project's I've done for myself.
+						Enough talk, here are a few DevOps related project's I've done for myself.
 					</p>
 					<ProjectPanel 
 						title="This Site"
