@@ -39,7 +39,7 @@ function Home() {
 						With my endless curiosity for IT, I'll continue learning and experimenting.
 					</p>
 					<p>
-                  		Please, feel free to have a browse. There is everything from JavaScript browser games, nodejs rest apis with tdd and docker.  
+						Please, feel free to have a browse. There is everything from JavaScript browser games, nodejs rest apis with tdd and docker.  
 					</p>
 				</section>
 			</div>
