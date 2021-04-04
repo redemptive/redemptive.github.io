@@ -38,8 +38,7 @@ function Games() {
 						title="Space Invaders"
 						paragraphs={[
 							'I don\'t think this one needs any introduction.',
-							'I\'ve remade this old school classic into a browser playable game. Ground breaking in it\'s time, \
-							simple game mechanics combine to make the game everybody knows.'
+							'I\'ve remade this old school classic into a browser playable game. Ground breaking in it\'s time, simple game mechanics combine to make the game everybody knows.'
 						]}
 						codeLink="https://github.com/redemptive/space-invaders"
 						playLink="https://redemptive.github.io/space-invaders/"
@@ -48,8 +47,7 @@ function Games() {
 						title="Asteroids"
 						paragraphs={[
 							'Another remake of a classic game.',
-							'Also groundbreaking in it\'s time, \
-							the challenge was definitely in the asteroid splitting mechanics when they are hit.'
+							'Also groundbreaking in it\'s time, the challenge was definitely in the asteroid splitting mechanics when they are hit.'
 						]}
 						codeLink="https://github.com/redemptive/js-asteroids"
 						playLink="https://redemptive.github.io/js-asteroids/"
@@ -58,8 +56,7 @@ function Games() {
 						title="Crafter (in development)"
 						paragraphs={[
 							'My own idea this time.',
-							'A 2D resource collecting and crafting game. \
-							Still in development, this has so far been the most complex of my games to make.'
+							'A 2D resource collecting and crafting game. Still in development, this has so far been the most complex of my games to make.'
 						]}
 						codeLink="https://github.com/redemptive/Crafter"
 						playLink="https://redemptive.github.io/Crafter/"

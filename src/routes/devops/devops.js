@@ -63,8 +63,7 @@ function DevOps() {
 						title="This Site"
 						paragraphs={[
 							'A little more detail perhaps about this site.',
-							'This project is built with nodejs and react. It also has a robust test suite. \
-							This is important for any good CI/CD pipeline.',
+							'This project is built with nodejs and react. It also has a robust test suite. This is important for any good CI/CD pipeline.',
 							'GitHub pages will kindly pull the repo, install packages, lint, test then deploy if all is well.'
 						]}
 						codeLink="https://github.com/redemptive/space-invaders"
@@ -73,8 +72,7 @@ function DevOps() {
 						title="Raspberry Pi Jenkins Server"
 						paragraphs={[
 							'This was quite a lot of fun.',
-							'First, I had to flash the sd card with a fresh ubuntu server 18.04 image. \
-							It\'s not the most powerful machine there is, but I kept installed programs to a minimum.'
+							'First, I had to flash the sd card with a fresh ubuntu server 18.04 image. It\'s not the most powerful machine there is, but I kept installed programs to a minimum.'
 						]}
 					/>
 				</section>
