@@ -3,35 +3,32 @@ name: CI
 on:
   push:
     branches:
-      - dev
+      - master
 
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [10.x]
+    permissions:
+      contents: write
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Git config
-      run: |
-        git config --local user.email "ewan_forbes@yahoo.co.uk"
-        git config --local user.name "redemptive"
-        git remote set-url origin https://${{secrets.GH_TOKEN}}@github.com/redemptive/redemptive.github.io.git
-    - name: npm install
-      run: npm install
-    - name: eslint
-      run: npm run lint
-    - name: Run tests
-      run: npm run ci-test
-    - name: Build package
-      run: npm build
-    - name: Deploy to GH pages
-      run: npm run deploy
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check Svelte app
+        run: npm run ci-test
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages branch
+        run: npm run deploy -- -u "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"

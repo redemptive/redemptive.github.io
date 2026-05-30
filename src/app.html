@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ewan Forbes, DevOps engineer working with cloud infrastructure, automation, and web projects."
+    />
+    <link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+    <link rel="manifest" href="%sveltekit.assets%/manifest.json" />
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem('theme');
+          document.documentElement.dataset.theme = storedTheme || 'dark';
+        } catch {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>
