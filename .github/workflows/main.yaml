@@ -31,4 +31,8 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages branch
-        run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          npm run deploy

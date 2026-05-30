@@ -11,7 +11,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
     "test": "npm run check",
     "ci-test": "npm run check",
-    "deploy": "gh-pages -b gh-pages -d build -u \"GitHub Actions <actions@github.com>\""
+    "deploy": "gh-pages -b gh-pages -d build -u \"Ewan Forbes <ewan_forbes@yahoo.co.uk>\""
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.10",
