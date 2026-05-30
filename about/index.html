@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ewan Forbes, DevOps engineer working with cloud infrastructure, automation, and web projects."
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="manifest" href="../manifest.json" />
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem('theme');
+          document.documentElement.dataset.theme = storedTheme || 'dark';
+        } catch {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+    <link href="../_app/immutable/entry/start.DA0fz62Z.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C6OCJo4Q.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DlGJ0AeR.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.CHTUjUOv.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/kNaey6uv.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.Dc2qUvFT.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CuzU5q3N.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/3.Q2gg7yOb.js" rel="modulepreload">
+		<!--12qhfyh--><!----><title>Ewan Forbes - DevOps Engineer</title>
+		<link href="../_app/immutable/assets/0.QsqQGJIX.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><div class="app"><div class="content"><header class="svelte-1elxaub"><a class="brand svelte-1elxaub" href="/"><span class="svelte-1elxaub">Ewan Forbes</span> <small class="svelte-1elxaub">DevOps Engineer</small></a> <div class="header-actions svelte-1elxaub"><nav aria-label="Primary navigation" class="svelte-1elxaub"><ul class="svelte-1elxaub"><!--[--><li><a href="/" class="svelte-1elxaub">Home</a></li><li><a href="/devops/" class="svelte-1elxaub">DevOps</a></li><li><a href="/games/" class="svelte-1elxaub">Games</a></li><li><a href="/about/" class="svelte-1elxaub">About</a></li><!--]--></ul></nav> <label class="theme-toggle svelte-1elxaub"><input type="checkbox" aria-label="Use dark mode" class="svelte-1elxaub"/> <span aria-hidden="true" class="svelte-1elxaub"><span class="toggle-thumb svelte-1elxaub"></span></span></label> <a class="github-link svelte-1elxaub" href="https://github.com/redemptive">GitHub</a></div></header><!----> <main><!--[--><!--[--><div class="about"><div class="wrapper"><aside class="sidebar"><h3>Technologies</h3> <h4>Front End</h4> <ul><li>Javascript</li> <li>Svelte</li> <li>SvelteKit</li> <li>GitHub Pages</li></ul> <h4>CI Build</h4> <ul><li>With GitHub Actions</li> <li>Pull dev branch</li> <li>Check the Svelte project</li> <li>Build static pages</li> <li>Publish to GitHub Pages</li></ul></aside> <section class="main"><h2>About This Site</h2> <p>I didn't want a plain old static HTML site!</p> <p>Using SvelteKit and GitHub actions, I've created something a little more interesting
+        while still publishing static files.</p> <h3>The Code</h3> <p>The SvelteKit project gets prerendered and deployed to GitHub Pages as a static site.</p> <p>This site is made with the help of Svelte. SvelteKit provides file-based routing between
+        different pages, and the static adapter turns each route into files GitHub Pages can serve.</p> <p>Having already been very familiar with node js and frontend frameworks, it was a fun project.</p> <h3>The Pipeline</h3> <p>The pipeline I created using GitHub actions.
+        I recently stumbled onto this and immediately wanted to learn to use it.
+        Before, I had been using a Raspberry PI with jenkins installed.
+        It is great having such a CI tool available for free.</p> <p>A good pipeline setup automates boring, time consuming manual tasks and eliminates the
+        possibility of human error. Here is what mine does:</p> <ul><li>Triggered on push to dev branch</li> <li>Installs npm packages</li> <li>Checks the Svelte project</li> <li>Builds the static SvelteKit site</li> <li>Deploys the build directory for GitHub Pages to serve</li></ul></section></div></div><!--]--><!--]--></main> <footer class="svelte-jz8lnl"><h3 class="svelte-jz8lnl">Ewan Forbes - DevOps Engineer</h3> <p class="svelte-jz8lnl">This site is made with SvelteKit and the Svelte static adapter. <a href="https://github.com/redemptive/redemptive.github.io" class="svelte-jz8lnl">See the code here</a></p></footer><!----></div></div><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1xovfgc = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.DA0fz62Z.js"),
+						import("../_app/immutable/entry/app.CHTUjUOv.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>
