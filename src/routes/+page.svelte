@@ -1,7 +1,15 @@
+<svelte:head>
+  <title>Ewan Forbes - DevOps Engineer</title>
+  <meta
+    name="description"
+    content="Ewan Forbes, a DevOps engineer in Edinburgh working with cloud infrastructure, automation and web projects."
+  />
+</svelte:head>
+
 <div class="home">
   <div class="wrapper">
     <aside class="sidebar">
-      <h3>Key Skills</h3>
+      <h3>Key Skills:</h3>
       <h4>DevOps/Cloud</h4>
       <ul>
         <li>Terraform</li>
@@ -23,13 +31,13 @@
     </aside>
     <section class="main">
       <h2>Ewan Forbes</h2>
-      <h3>DevOps Engineer</h3>
+      <h3>DevOps Engineer/Cloud Operations Engineer</h3>
       <p>
         Hello. I'm Ewan Forbes, an experienced DevOps engineer and general cloud guy from Edinburgh.
       </p>
       <p>
-        There's nothing I enjoy more than learning a new technology or skill.
-        This has given me a wide range of knowledge across all stages of the development lifecycle.
+        I like messing around with computers and there's nothing I enjoy more than learning a new technology or skill.
+        This has given me a wide range of knowledge across all areas of the development lifecycle.
         With my endless curiosity for IT, I'll continue learning and experimenting.
       </p>
       <p>

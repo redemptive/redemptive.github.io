@@ -11,7 +11,7 @@
 
 <div class="project-panel">
   <h3>{title}</h3>
-  {#each paragraphs as paragraph}
+  {#each paragraphs as paragraph (paragraph)}
     <p>{paragraph}</p>
   {/each}
   {#if codeLink}

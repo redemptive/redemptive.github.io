@@ -2,14 +2,21 @@
   import ProjectPanel from '$lib/components/ProjectPanel.svelte';
 </script>
 
+<svelte:head>
+  <title>Fun - Ewan Forbes</title>
+  <meta
+    name="description"
+    content="Browser games and playful JavaScript projects by Ewan Forbes, including Face Invaders and Asteroids."
+  />
+</svelte:head>
+
 <div class="fun">
   <div class="wrapper">
     <aside class="sidebar">
-      <h3>Fun:</h3>
+      <h3>Games:</h3>
       <ul>
         <li>Face Invaders</li>
         <li>Asteroids</li>
-        <li>Crafter</li>
       </ul>
     </aside>
     <section class="main">
@@ -30,7 +37,7 @@
       <ProjectPanel
         title="Face Invaders"
         paragraphs={[
-          "A Space Invaders style game with puking emojis.",
+          "A Space Invaders-style game with puking emojis.",
           "I wanted to see what I could do with plain DOM manipulation and no canvas."
         ]}
         codeLink="https://github.com/redemptive/face-invaders"
@@ -40,7 +47,7 @@
         title="Asteroids"
         paragraphs={[
           'Another remake of a classic game.',
-          "Also groundbreaking in its time, the challenge was definitely in the asteroid-splitting mechanics when they are hit."
+          "Groundbreaking in its time, the challenge was definitely in the asteroid-splitting mechanics when they are hit."
         ]}
         codeLink="https://github.com/redemptive/jasteroids"
         playLink="https://redemptive.github.io/jasteroids/"

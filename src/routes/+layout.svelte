@@ -3,6 +3,7 @@
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
 
+  /** @type {{ page: '/' | '/serious/' | '/fun/' | '/books/' | '/about/', text: string }[]} */
   const navLinks = [
     { page: '/', text: 'Home' },
     { page: '/serious/', text: 'Serious' },

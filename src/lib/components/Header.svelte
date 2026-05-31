@@ -1,11 +1,28 @@
 <script>
+  import { resolve } from '$app/paths';
+  import { page } from '$app/stores';
   import { onMount } from 'svelte';
 
-  /** @type {{ page: string, text: string }[]} */
+  /** @typedef {'/' | '/serious/' | '/fun/' | '/books/' | '/about/'} NavPath */
+
+  /** @type {{ page: NavPath, text: string }[]} */
   export let navLinks = [];
 
   let darkMode = false;
   const storageKey = 'theme';
+
+  /** @param {string} path */
+  function normalizePath(path) {
+    return path === '/' ? path : path.replace(/\/$/, '');
+  }
+
+  /**
+   * @param {string} currentPath
+   * @param {string} targetPath
+   */
+  function isCurrentPath(currentPath, targetPath) {
+    return normalizePath(currentPath) === normalizePath(targetPath);
+  }
 
   /** @param {'light' | 'dark'} theme */
   function applyTheme(theme) {
@@ -32,15 +49,23 @@
 </script>
 
 <header>
-  <a class="brand" href="/">
+  <a class="brand" href={resolve('/')}>
     <span>Ewan Forbes</span>
-    <small>DevOps Engineer</small>
+    <small>Head in the cloud</small>
   </a>
   <div class="header-actions">
     <nav aria-label="Primary navigation">
       <ul>
-        {#each navLinks as link}
-          <li><a href={link.page}>{link.text}</a></li>
+        {#each navLinks as link (link.page)}
+          <li>
+            <a
+              href={resolve(link.page)}
+              class:active={isCurrentPath($page.url.pathname, link.page)}
+              aria-current={isCurrentPath($page.url.pathname, link.page) ? 'page' : undefined}
+            >
+              {link.text}
+            </a>
+          </li>
         {/each}
       </ul>
     </nav>
@@ -124,11 +149,17 @@
     text-transform: uppercase;
   }
 
-  nav a:hover {
+  nav a:hover,
+  nav a.active {
     color: var(--text);
     border-color: var(--border);
     background: var(--surface-soft);
     box-shadow: 3px 3px 0 color-mix(in srgb, var(--border) 75%, transparent);
+  }
+
+  nav a.active {
+    color: var(--surface);
+    background: var(--highlight-color);
   }
 
   .theme-toggle {

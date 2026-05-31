@@ -2,6 +2,14 @@
   import ProjectPanel from '$lib/components/ProjectPanel.svelte';
 </script>
 
+<svelte:head>
+  <title>Serious - Ewan Forbes</title>
+  <meta
+    name="description"
+    content="DevOps, cloud engineering, automation and software delivery projects by Ewan Forbes."
+  />
+</svelte:head>
+
 <div class="serious">
   <div class="wrapper">
     <aside class="sidebar">
@@ -56,7 +64,7 @@
         <li>Have a deep understanding of development methodologies such as agile, scrum and lean.</li>
       </ul>
       <p>
-        Enough talk; here are a few DevOps-related projects I've done for myself.
+        Enough talk; here are a few of the more serious projects I've done.
       </p>
       <ProjectPanel
         title="This Site"
