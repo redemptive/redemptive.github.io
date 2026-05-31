@@ -14,6 +14,7 @@
   <div class="wrapper">
     <aside class="sidebar">
       <h3>Games:</h3>
+      <h4>Browser:</h4>
       <ul>
         <li>Face Invaders</li>
         <li>Asteroids</li>

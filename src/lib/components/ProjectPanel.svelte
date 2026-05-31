@@ -6,6 +6,8 @@
   /** @type {string | undefined} */
   export let codeLink = undefined;
   /** @type {string | undefined} */
+  export let visitLink = undefined;
+  /** @type {string | undefined} */
   export let playLink = undefined;
 </script>
 
@@ -16,6 +18,9 @@
   {/each}
   {#if codeLink}
     <p><a data-testid="code-link" href={codeLink}>View code</a></p>
+  {/if}
+  {#if visitLink}
+    <p><a data-testid="visit-link" href={visitLink}>Visit</a></p>
   {/if}
   {#if playLink}
     <p><a data-testid="play-link" href={playLink}>Play it!</a></p>
