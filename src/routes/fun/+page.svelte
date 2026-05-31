@@ -42,8 +42,8 @@
           'Another remake of a classic game.',
           "Also groundbreaking in its time, the challenge was definitely in the asteroid-splitting mechanics when they are hit."
         ]}
-        codeLink="https://github.com/redemptive/js-asteroids"
-        playLink="https://redemptive.github.io/js-asteroids/"
+        codeLink="https://github.com/redemptive/jasteroids"
+        playLink="https://redemptive.github.io/jasteroids/"
       />
     </section>
   </div>
