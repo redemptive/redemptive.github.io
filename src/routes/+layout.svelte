@@ -5,8 +5,9 @@
 
   const navLinks = [
     { page: '/', text: 'Home' },
-    { page: '/devops/', text: 'DevOps' },
-    { page: '/games/', text: 'Games' },
+    { page: '/serious/', text: 'Serious' },
+    { page: '/fun/', text: 'Fun' },
+    { page: '/books/', text: 'Books' },
     { page: '/about/', text: 'About' }
   ];
 </script>

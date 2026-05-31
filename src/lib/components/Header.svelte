@@ -62,8 +62,8 @@
 <style>
   header {
     color: var(--muted);
-    padding: 30px 0 48px;
-    margin-bottom: 4px;
+    padding: 30px 0 38px;
+    margin-bottom: clamp(20px, 3vw, 32px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -217,7 +217,7 @@
     header {
       align-items: flex-start;
       flex-direction: column;
-      padding-bottom: 36px;
+      padding-bottom: 30px;
     }
 
     .header-actions {

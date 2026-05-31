@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pixel arcade cabinet">
+  <rect width="64" height="64" fill="#070913"/>
+  <path fill="#68eaff" d="M14 4h36v8h4v42h-6v6H16v-6h-6V12h4z"/>
+  <path fill="#151927" d="M18 10h28v8h4v32h-4v6H18v-6h-4V18h4z"/>
+  <path fill="#f05a28" d="M20 8h24v6H20zM18 44h28v6H18z"/>
+  <path fill="#fffdf7" d="M20 18h24v20H20z"/>
+  <path fill="#101522" d="M24 22h16v12H24z"/>
+  <path fill="#00a88f" d="M26 24h4v4h-4zM34 28h4v4h-4z"/>
+  <path fill="#68eaff" d="M22 40h8v4h-8z"/>
+  <path fill="#f2c94c" d="M34 40h4v4h-4z"/>
+  <path fill="#ff5fa8" d="M40 40h4v4h-4z"/>
+  <path fill="#151927" d="M28 38h4v6h-4z"/>
+  <path fill="#151927" d="M18 52h8v4h-8zM38 52h8v4h-8z"/>
+</svg>
